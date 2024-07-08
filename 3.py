@@ -7,6 +7,8 @@ from os import listdir
 from os.path import isfile, join
 import cv2  # Assuming you're using OpenCV for image loading
 
+"""in this file i try to define load_images_and_labels function but it DOESN'T WORK TOO"""
+
 
 def load_images_and_labels(data_dir):
     """

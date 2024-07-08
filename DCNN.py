@@ -3,6 +3,9 @@ from tensorflow.keras.layers import Dense, Dropout, Flatten
 from tensorflow.keras.models import Model
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
+
+"""This is the first development of training a convolutional model, using frozen ResNet50, same directory for training 
+and test data(which is wrong)."""
 # Define paths to your training and validation data directories
 train_data_dir = "./GTSRB_Final_Training_Images/GTSRB/Final_Training/Images"
 val_data_dir = "./GTSRB_Final_Test_Images/GTSRB/Final_Test/Images"

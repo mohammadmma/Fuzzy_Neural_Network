@@ -9,6 +9,9 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import matplotlib.pyplot as plt
 
+"""this file fixed the problem of file '1.1.py' with choosing right dataset for validation set """
+
+
 # Step 1: Train the DCNN
 train_data_dir = "./GTSRB_Final_Training_Images/GTSRB/Final_Training/Images"
 val_data_dir = "./GTSRB_Online-Test-Images-Sorted/GTSRB/Online-Test-sort"

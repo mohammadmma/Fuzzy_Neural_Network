@@ -4,16 +4,16 @@ from tensorflow.keras.models import Model
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from sklearn.model_selection import train_test_split
 
+"""in this file I'm trying to use a function named load_images_and_labels which supposed to shuffle train data and 
+devide it to two part(20%for test set 80%for training set), DOESN'T WORK AT ALL!!! """
 
 
 # Load images and labels from your dataset directory
 X_all, y_all = load_images_and_labels("./GTSRB_Final_Training_Images/GTSRB/Final_Training/Images")
 
-
 # Define paths to your training and validation data directories
 train_data_dir = "./GTSRB_Final_Training_Images/GTSRB/Final_Training/Images"
 val_data_dir = "./GTSRB_Final_Training_Images/GTSRB/Final_Training/Images"
-
 
 X_train, X_val, y_train, y_val = train_test_split(X_all, y_all, test_size=0.2, random_state=42)
 
@@ -47,7 +47,6 @@ base_model = ResNet50(weights='imagenet', include_top=False,
 
 # Print the actual output shape for verification (optional)
 print(base_model.output.shape)
-
 
 # Freeze the pre-trained layers (optional)
 base_model.trainable = False

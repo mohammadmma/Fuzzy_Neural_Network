@@ -9,6 +9,10 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import matplotlib.pyplot as plt
 
+"""this file is a enhanced version of 'DCNN.py' combined with fuzzy system and fuzzy rules, contain different dataset 
+for trainin and test, BUT VALIDATION DATASET IS NOT VALID!!!!"""
+
+
 # Step 1: Train the DCNN
 train_data_dir = "./GTSRB_Final_Training_Images/GTSRB/Final_Training/Images"
 val_data_dir = "./GTSRB_Final_Test_Images/GTSRB/Final_Test/Images"

@@ -1,3 +1,6 @@
+"""FINAL EDITION"""
+"""FIXED DATASET, FIXED MODEL"""
+"""RUN THIS"""
 """learnin rate scheduler, precision, recall, unfreeze and fine-tune Resnet50 upper layers"""
 
 
